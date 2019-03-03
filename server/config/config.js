@@ -11,6 +11,6 @@ let urlDB;
 if(process.env.NODE_ENV === 'dev'){
      urlDB= 'mongodb+srv://joasimar:ibFihLuoIcFoLMOr@cluster0-z2ne7.mongodb.net/cafe'
 }else{
-     urlDB= 'mongodb+srv://joasimar:ibFihLuoIcFoLMOr@cluster0-z2ne7.mongodb.net/cafe'
+     urlDB= process.env.Mongo
 }
 process.env.URLDB = urlDB;
