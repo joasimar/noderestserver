@@ -15,7 +15,7 @@ app.post('/login',(req,res)=>{
                })
           }
           if ( !usuarioDB){
-               return res.status(500).json({
+               return res.status(500).json({ 
                     ok: false,
                     err: {
                          message: '(usuario) o contraseña incorrecta'

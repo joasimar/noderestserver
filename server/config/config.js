@@ -9,9 +9,8 @@ process.env.SEED= process.env.SEED || 'secretdev'
 
 let urlDB;
 if(process.env.NODE_ENV === 'dev'){
-     urlDB= 'mongodb://localhost:27017/cafe'
+     urlDB= 'mongodb+srv://joasimar:ibFihLuoIcFoLMOr@cluster0-z2ne7.mongodb.net/cafe'
 }else{
-     urlDB= 'process.env.Mongo_URL'
+     urlDB= 'mongodb+srv://joasimar:ibFihLuoIcFoLMOr@cluster0-z2ne7.mongodb.net/cafe'
 }
-
 process.env.URLDB = urlDB;
