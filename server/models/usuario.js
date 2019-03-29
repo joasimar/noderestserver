@@ -19,6 +19,7 @@ let usuarioSchema = new Schema({
     email: {
         type: String,
         unique: true,
+        index: true,
         required: [true, 'El correo es necesario']
     },
     password: {
